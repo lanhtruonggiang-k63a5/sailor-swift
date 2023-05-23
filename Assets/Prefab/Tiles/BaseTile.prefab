@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 575272466529896056}
   - component: {fileID: 575272466529896057}
-  - component: {fileID: 575272466529896062}
   - component: {fileID: 6297165268298661212}
   m_Layer: 0
-  m_Name: Square
+  m_Name: BaseTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &575272466529896062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575272466529896063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc48e6faf0469af46bb408ad6d5842da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseColor: {r: 0.101530775, g: 0.5849056, b: 0.110086024, a: 1}
-  _offsetColor: {r: 0.030562414, g: 0.9528302, b: 0.15130103, a: 0.58431375}
-  _renderer: {fileID: 575272466529896057}
-  _highlight: {fileID: 6891123957128406954}
 --- !u!61 &6297165268298661212
 BoxCollider2D:
   m_ObjectHideFlags: 0
