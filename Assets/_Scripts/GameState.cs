@@ -1,9 +1,8 @@
 public enum GameState
 {
     GenerateGrid = 0,
-    SpawnHero = 1,
-    SpawnEnemy = 2,
-    HeroTurn = 3,
-    EnemyTurn = 4,
-
+    SpawnHeroes = 1,
+    SpawnEnemies = 2,
+    HeroesTurn = 3,
+    EnemiesTurn = 4
 }

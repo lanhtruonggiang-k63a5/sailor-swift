@@ -12,4 +12,3 @@ public class GrassTile : Tile
         _renderer.color = isOffset ? _offsetColor : _baseColor;
     }
 }
-

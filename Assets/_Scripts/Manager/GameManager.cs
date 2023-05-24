@@ -1,46 +1,43 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
-    public GameState gameState;
-    private void Awake()
+    public static GameManager Instance;
+    public GameState GameState;
+
+    void Awake()
     {
         Instance = this;
     }
 
-    private void Start()
+    void Start()
     {
         ChangeState(GameState.GenerateGrid);
     }
+
     public void ChangeState(GameState newState)
     {
-        gameState = newState;
-
-        switch (gameState)
+        GameState = newState;
+        switch (newState)
         {
             case GameState.GenerateGrid:
                 GridManager.Instance.GenerateGrid();
                 break;
-            case GameState.SpawnHero:
-
+            case GameState.SpawnHeroes:
+                UnitManager.Instance.SpawnHeroes();
                 break;
-            case GameState.SpawnEnemy:
-
+            case GameState.SpawnEnemies:
+                UnitManager.Instance.SpawnEnemies();
                 break;
-            case GameState.HeroTurn:
-
+            case GameState.HeroesTurn:
                 break;
-            case GameState.EnemyTurn:
-
+            case GameState.EnemiesTurn:
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
         }
     }
-
-
 }

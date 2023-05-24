@@ -95,3 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83fdbedbca620a48bdbe32cf61f6df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitName: Pig
+  OccupiedTile: {fileID: 0}
+  Faction: 1
